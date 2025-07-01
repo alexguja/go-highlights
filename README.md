@@ -6,3 +6,4 @@ For an introduction to Go, please refer to https://go.dev/learn/
 
 ## Contents
 - [Go Environment](ENVIRONMENT.md)
+- [Predeclared Types](PREDECLARED_TYPES.md)
