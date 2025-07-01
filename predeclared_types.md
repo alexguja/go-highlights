@@ -118,6 +118,17 @@ Go uses the IEEE 754 specification, giving a large range and limited precision.
 | `float64` | 1.7976931348623157e+308 | 5.0000000000000000e-324 |
 
 
+>[!NOTE]
+> While Go lets you use `==` and `!=` to compare floats, don’t do it. Due to the inexact nature of floats, two floating point values might not be equal when you think they should be. Instead, define a maximum allowed variance and see if the difference
+between two floats is less than than that variance. For example:
+
+```Go
+const epsilon = 0.00001
+if math.Abs(a - b) < epsilon {
+    // a and b are considered equal
+}
+```
+
 
 #### Complex Types
 Go has first-class support for complex numbers, with two types: `complex64` and `complex128`.
