@@ -7,3 +7,8 @@ For an introduction to Go, please refer to https://go.dev/learn/
 ## Contents
 - [Go Environment](environment.md)
 - [Predeclared Types](predeclared_types.md)
+
+
+
+## References
+[1] Jon Bodner - [Learning Go (2nd edition)](https://www.oreilly.com/library/view/learning-go-2nd/9781098139285/) 
