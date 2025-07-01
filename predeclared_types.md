@@ -12,17 +12,54 @@ Literals the raw, direct representation of values in your code (e.g., `123`, `'a
 
 Types of Literals:
 
-- Integer Literals: Whole numbers. Can be base 10 (normal), binary (`0b`), octal (`0o` or confusingly `0`), or hexadecimal (`0x`). You can use underscores (e.g., `1_000_000`) for readability, but not at the start/end or next to each other.
+- **Integer Literals**: Whole numbers. Can be base 10 (normal), binary (`0b`), octal (`0o` or confusingly `0`), or hexadecimal (`0x`). You can use underscores (e.g., `1_000_000`) for readability, but not at the start/end or next to each other.
 
-- Floating-Point Literals: Numbers with decimal points (e.g., `3.14`). Can also use exponents (`6.03e23`) or hexadecimal (`0x1.999999999999ap+3`). Underscores are also allowed for readability.
+    ```Go
+    // Examples of integer literals
+    123         // Decimal literal
+    0b1010      // Binary literal for 10
+    0o12        // Octal literal for 10
+    0xA         // Hexadecimal literal for 10
+    1_000_000   // Readable integer with underscores
+    ```
 
-- Rune Literals: Single characters, enclosed in single quotes (e.g., `'a'`). They represent Unicode characters and can be written in various hexadecimal or octal escape forms (e.g., `'\u0061'`). Common escapes include `\n` (newline), `\t` (tab), `\'`, `\"`, `\\`.
+- **Floating-Point Literals**: Numbers with decimal points
 
-- String Literals: Sequences of characters.
+    ```Go
+    // Examples of floating-point literals
+    3.14                  // Decimal literal
+    6.03e23               // Scientific notation
+    0x1.999999999999ap+3  // Hexadecimal floating-point literal
+    ```
 
-- Interpreted Strings: Enclosed in double quotes (e.g., `"Hello\nWorld"`). Backslashes are used for escapes.
 
-- Raw Strings: Enclosed in backquotes (e.g., `` `Hello\nWorld` ``). They interpret everything literally, including newlines and backslashes, except for backquotes themselves. Useful for multi-line strings or strings with many backslashes.
+
+- **Rune Literals**: Single characters, enclosed in single quotes (e.g., `'a'`). They represent Unicode characters and can be written in various hexadecimal or octal escape forms (e.g., `'\u0061'`). Common escapes include `\n` (newline), `\t` (tab), `\'`, `\"`, `\\`.
+
+    ```Go
+    // Examples of rune literals
+    'a'         // Character 'a'
+    '\n'        // Newline character
+    '\u0061'    // Unicode for 'a'
+    '\x61'      // Hexadecimal for 'a'
+    '\u{1F600}' // Unicode emoji (grinning face)
+    ```
+
+- **String Literals**: Sequences of characters.
+    Can be enclosed in double quotes (interpreted strings) or backquotes (raw strings).
+    
+    ```Go
+    // Examples of string literals
+    "Hello, World!"          // Interpreted string
+    "Line1\nLine2"          // Newline in interpreted string
+    `This is a raw string`   // Raw string, no escapes
+    `Multi-line
+    raw string`              // Multi-line raw string
+    ```
+
+- **Interpreted Strings**: Enclosed in double quotes (e.g., `"Hello\nWorld"`). Backslashes are used for escapes.
+
+- **Raw Strings**: Enclosed in backquotes (e.g., `` `Hello\nWorld` ``). They interpret everything literally, including newlines and backslashes, except for backquotes themselves. Useful for multi-line strings or strings with many backslashes.
 
 
 > [!Note]
