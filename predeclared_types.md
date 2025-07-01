@@ -32,10 +32,6 @@ Types of Literals:
 
 A key concept in Go is that literals are untyped. This means a number like `100` doesn't have a specific type (like `int32` or `int64`) until it's assigned to a variable or used in an expression that forces a type.
 
-This allows flexibility: an integer literal `100` can be used directly in a floating-point expression or assigned to a floating-point variable.
+This allows flexibility: an integer literal `100` can be used directly in a floating-point expression or assigned to a floating-point variable. However, type compatibility still applies: you can't assign a number literal to a string variable, or a float literal to an integer variable.
 
-However, type compatibility still applies: you can't assign a number literal to a string variable, or a float literal to an integer variable.
-
-There are size limitations: a literal cannot overflow the variable it's assigned to (e.g., `1000` cannot be assigned to a byte variable, which maxes out at `255`).
-
-If a literal's type isn't clear from the context, Go assigns it a default type (e.g., `int` for integers, `float64` for floats).
+There are size limitations: a literal cannot overflow the variable it's assigned to (e.g., `1000` cannot be assigned to a byte variable, which maxes out at `255`). If a literal's type isn't clear from the context, Go assigns it a default type (e.g., `int` for integers, `float64` for floats).
