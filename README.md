@@ -3,3 +3,6 @@ This repository is a personal collection of Go programming language highlights, 
 
 
 For an introduction to Go, please refer to https://go.dev/learn/
+
+## Contents
+- [Go Environment](ENVIRONMENT.md)
