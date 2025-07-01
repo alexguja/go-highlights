@@ -5,5 +5,5 @@ This repository is a personal collection of Go programming language highlights, 
 For an introduction to Go, please refer to https://go.dev/learn/
 
 ## Contents
-- [Go Environment](ENVIRONMENT.md)
-- [Predeclared Types](PREDECLARED_TYPES.md)
+- [Go Environment](environment.md)
+- [Predeclared Types](predeclared_types.md)
