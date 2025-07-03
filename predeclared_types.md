@@ -93,20 +93,24 @@ var i int = 42
 var f float64 = 3.14
 var c complex128 = 1 + 2i
 ```
+
 #### Integer Types
+Go has several integer types, both signed and unsigned, with varying sizes. The size of an integer type determines its range of values.
 
+| Type              | Value Range                                             |
+| ----------------- | ------------------------------------------------------- |
+| `int8` or `byte`  | -128 to 127                                             |
+| `int16`           | -32,768 to 32,767                                       |
+| `int32` or `rune` | -2,147,483,648 to 2,147,483,647                         |
+| `int64`           | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
+| `uint8`           | 0 to 255                                                |
+| `uint16`          | 0 to 65,535                                             |
+| `uint32`          | 0 to 4,294,967,295                                      |
+| `uint64`          | 0 to 18,446,744,073,709,551,615                         |
+| `int`             | Platform-dependent (32 or 64 bits)                      |
+| `uint`            | Platform-dependent (32 or 64 bits)                      |
+| `uintptr`         | Unsigned integer large enough to hold a pointer         |
 
-| Type             | Value Range                                             |
-| ---------------- | ------------------------------------------------------- |
-| `int8` or `byte` | -128 to 127                                             |
-| `int16`          | -32,768 to 32,767                                       |
-| `int32`          | -2,147,483,648 to 2,147,483,647                         |
-| `int64`          | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
-| `uint8`          | 0 to 255                                                |
-| `uint16`         | 0 to 65,535                                             |
-| `uint32`         | 0 to 4,294,967,295                                      |
-| `uint64`         | 0 to 18,446,744,073,709,551,615                         |
-| `int`            | Platform-dependent (32 or 64 bits)                      |
 
 #### Floating-Point Types
 
@@ -139,3 +143,17 @@ var c1 complex64 = 1 + 2i
 var c2 complex128 = 3 + 4i
 ```
 
+### Strings and Runes
+The `string` type represents a sequence of Unicode characters, while the `rune` type represents a single Unicode character.
+The zero value of a string is an empty string `""`, and the zero value of a rune is `0`, which represents the Unicode character U+0000 (the null character).
+
+
+```Go
+// Example of strings and runes
+var s string = "Hello, 世界"
+var r rune = '世'
+```
+
+Like integers and floats, strings are compared for equality using `==`, difference
+with `!=`, or ordering with `>`, `>=`, `<`, or `<=`. They are concatenated by using the `+`
+operator.
