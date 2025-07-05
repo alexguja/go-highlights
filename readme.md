@@ -12,7 +12,7 @@ For an introduction to Go, please refer to https://go.dev/learn/
 ## Contents
 - [Go Environment](environment.md)
 - [Predeclared Types](predeclared_types.md)
-
+- [Declarations](declarations.md)
 
 
 ## References

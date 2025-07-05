@@ -153,3 +153,18 @@ var r rune = '世'
 Like integers and floats, strings are compared for equality using `==`, difference
 with `!=`, or ordering with `>`, `>=`, `<`, or `<=`. They are concatenated by using the `+`
 operator.
+
+
+### Type Conversion
+To prevent bugs associated with automatic type conversion, Go requires explicit type conversion between different types. This is done using the syntax `Type(value)`. Since all type conversions are explicit, Go doesn’t allow truthiness. In fact, no
+other type can be converted to a bool, implicitly or explicitly.
+
+```Go
+var x int = 8
+var y float64 = 30.2
+var z = float64(x) + y
+var a int = x + int(y)
+```
+
+>[!NOTE]
+> Idiomatic Go values comprehensibility over conciseness.
