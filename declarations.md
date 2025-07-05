@@ -19,7 +19,7 @@ var x, y = 10, 20
 
 var x, y int
 
-var x, y = 10, "hi",
+var x, y = 10, "hi"
 
 var (
     x int
