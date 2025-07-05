@@ -38,7 +38,7 @@ y, z := 20, "hello" // same as var y, z = 20, "hello"
 ```
 
 >[!NOTE]
-> The `:=` operator can do one trick that you cannot do with var: it allows you to assign
+> The `:=` operator can do one trick that you cannot do with `var`: it allows you to assign
 values to existing variables, too. As long as there is one new variable on the lefthand
 side of the `:=`, then any of the other variables can already exist
 
